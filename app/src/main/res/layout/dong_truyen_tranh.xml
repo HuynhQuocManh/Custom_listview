@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/imagetruyentranh"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/black_bird1" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imagetruyentranh"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textviewten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên truyện tranh"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="giá truỵen tranh"
+            android:textColor="#cf010101"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textviewsotrang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="số trang"
+            android:textColor="#8b010101"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/Buttonxoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xóa"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/linear"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>
